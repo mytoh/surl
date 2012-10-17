@@ -1,0 +1,11 @@
+
+(install
+  (
+    (run-process `(gauche-install -T ,(build-path ( *lehti-dist-directory* ) "surl")
+                                  "bin/surl")
+                 :wait #t)
+   ;; library sources
+   (copy-directory* (build-path ( *lehti-cache-directory* ) "surl/lib")
+                    (build-path ( *lehti-dist-directory* ) "surl/lib"))
+)
+)
