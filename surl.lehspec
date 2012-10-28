@@ -1,6 +1,7 @@
 
 
 (spec
+  '(name "surl")
   '(files ("lib/**/*.scm"
         "bin/*"
         "*.lehspec"
