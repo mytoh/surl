@@ -1,10 +1,8 @@
 
-
 (spec
-  '(name "surl")
-  '(files ("lib/**/*.scm"
-        "bin/*"
-        "*.lehspec"
-        "readme*"
-        "test/**/*.scm")))
-
+  (name "surl")
+  (description "grab content from url")
+  (homepage "http://github.com/mytoh/surl")
+  (files ("lib/surl.sls"
+          "surl.lehspec"
+          )))
