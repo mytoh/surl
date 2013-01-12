@@ -3,9 +3,12 @@
   (export surl
           surl->utf8)
   (import
-    (rnrs)
+    (silta base)
     (irregex)
     (srfi :8)
+    (only (rnrs)
+          put-bytevector
+          open-file-output-port)
     (http))
 
   (begin
